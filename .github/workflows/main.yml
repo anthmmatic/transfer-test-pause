@@ -3,10 +3,4 @@ on:
 
 jobs:
   job-name:
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          for run in {1..60}; do
-            echo "Log line: $run"
-            sleep 1
-          done
+    uses: anthmmatic/transfer-test-running/.github/workflows/main.yml@main
